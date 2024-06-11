@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, VStack, HStack, Input, Button, Text, Box, IconButton } from "@chakra-ui/react";
+import { Container, VStack, HStack, Input, Button, Text, Box, IconButton, Heading } from "@chakra-ui/react";
 import { FaEdit, FaTrash } from "react-icons/fa";
 
 const Index = () => {
@@ -32,6 +32,9 @@ const Index = () => {
 
   return (
     <Container centerContent maxW="container.md" py={10}>
+      <Heading as="h1" size="2xl" mb={6} textAlign="center">
+        Todo App
+      </Heading>
       <VStack spacing={4} w="100%">
         <HStack w="100%">
           <Input 
